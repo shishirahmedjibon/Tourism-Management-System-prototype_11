@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourism Management System</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <div class="brand-badge">TMS</div>
+      <div>
+        <h1>Tourism Management System</h1>
+        <p>Browse, book, and manage tourism packages</p>
+      </div>
+    </div>
+
+    <div class="role-switch">
+      <button id="customerModeBtn" class="active">Customer</button>
+      <button id="adminModeBtn">Admin</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="customerView" class="view"></section>
+    <section id="adminView" class="view hidden"></section>
+  </main>
+
+  <div id="modalRoot"></div>
+  <div id="toastRoot"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/customer.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
